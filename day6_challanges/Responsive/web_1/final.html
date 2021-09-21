@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Band Concert Website</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="final-styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header id="header">
+        <h1 id="logo">HOME</h1>
+        <ul id="nav">
+          <li>Home</li>
+          <li>Band</li>
+          <li>Tour</li>
+          <li>Contact</li>
+          <li>More <i class="fa fa-chevron-down"></i></li>
+        </ul>
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-search"></i>
+      </header>
+
+      <div class="banner-img">
+        <div class="banner-text">
+          <p>New York</p>
+          <p>The atmosphere in New York is Lorem Ipsum</p>
+        </div>
+      </div>
+
+      <section id="band-intro">
+        <h1>THE BAND</h1>
+        <p class="text-secondary">We love music</p>
+        <p>
+          We have created a fictional band website. Proin luctus metus ut mi
+          venenatis varius. Pellentesque molestie nibh eu aliquet viverra.
+          Vestibulum faucibus quam in odio ultricies, a auctor sapien lacinia.
+          Vestibulum convallis nunc vitae ipsum auctor egestas. Proin in ligula
+          id risus dapibus sagittis sit amet ut enim. Donec id egestas libero.
+          Maecenas molestie magna vitae feugiat dignissim. Donec lacinia nisl ut
+          augue rutrum ultricies. Vestibulum tempor neque ut urna venenatis, id
+          semper massa consectetur. Praesent aliquet nunc ex, venenatis vehicula
+          dui feugiat id. Ut at vulputate libero. Sed pharetra aliquet ultrices.
+          Cras porttitor magna vehicula velit consequat rutrum. Vestibulum
+          rhoncus vulputate nisl ac laoreet.
+        </p>
+
+        <div id="bandmember-list">
+          <div class="bandmember-card">
+            <h3>Name</h3>
+            <img src="images/bandmember.jpg" alt="Band Member" height="450px" />
+          </div>
+          <div class="bandmember-card">
+            <h3>Name</h3>
+            <img src="images/bandmember.jpg" alt="Band Member" height="450px" />
+          </div>
+          <div class="bandmember-card">
+            <h3>Name</h3>
+            <img src="images/bandmember.jpg" alt="Band Member" height="450px" />
+          </div>
+        </div>
+      </section>
+
+      <section id="ticket-section">
+        <h1>TOUR DATES</h1>
+        <p class="text-secondary">Remember to book your tickets!</p>
+        <ul id="dates-table">
+          <li>
+            <p>September</p>
+            <span class="sold-out">Sold Out</span>
+          </li>
+          <li>
+            <p>October</p>
+            <span class="sold-out">Sold Out</span>
+          </li>
+          <li>
+            <p>November</p>
+          </li>
+        </ul>
+
+        <div class="dates-list">
+          <div class="dates-card">
+            <img src="images/newyork.jpg" alt="New York" />
+            <h3>New York</h3>
+            <p class="text-secondary">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+            <div class="solid-btn">Buy Tickets</div>
+          </div>
+          <div class="dates-card">
+            <img src="images/paris.JPG" alt="Paris" />
+            <h3>Paris</h3>
+            <p class="text-secondary">Fri 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+            <div class="solid-btn">Buy Tickets</div>
+          </div>
+          <div class="dates-card">
+            <img src="images/sanfran.jpg" alt="San Franc" />
+            <h3>San Francisco</h3>
+            <p class="text-secondary">Fri 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+            <div class="solid-btn">Buy Tickets</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-section">
+        <h1>CONTACT</h1>
+        <p class="text-secondary">Fan? Drop a note!</p>
+        <div id="contact-content">
+          <div id="contact-info">
+            <p><i class="fa fa-map-marker-alt"></i>Chicago, US</p>
+            <p><i class="fa fa-phone-alt"></i>Phone: +00 151515</p>
+            <p><i class="fa fa-envelope"></i>Email: mail@mail.com</p>
+          </div>
+          <form id="form-list">
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <input
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Message"
+            />
+          </form>
+        </div>
+        <div id="btn-container">
+          <div class="solid-btn send-btn">SEND</div>
+        </div>
+      </section>
+
+      <footer>
+        <div id="footer-img"></div>
+        <div id="footer-text">
+          <div id="footer-btn">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-snapchat-ghost"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <p>Powered by w3.css</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Josefin Slab', sans-serif, serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+#app {
+  padding: 1.25rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+header #test {
+  display: none;
+}
+
+header ul {
+  list-style: none;
+  display: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 1.5rem;
+
+}
+
+#food-section {
+  margin: 2rem 0;
+}
+
+.food-list {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.food-list > * {
+  margin-bottom: 10px;
+}
+
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-bar  > * {
+  margin: 0 1rem;
+}
+
+.navigation-bar .navigation-active {
+  background-color: black;
+  width: 25px;
+  height: 25px;
+  color: white;
+  padding: 8px 10px;
+}
+
+.line-break {
+  width: 90%;
+  height: 2px;
+  background-color: gray;
+  opacity: 0.2;
+  margin: 3rem auto;
+}
+
+#about-chef {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#about-chef h6 {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+#about-chef > * {
+  margin: 1rem 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-section > * {
+  margin: 1rem 0;
+}
+
+.blog-content-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.blog-content-text > * {
+  margin: 0.5rem 1rem;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.tag-list {
+  width: calc(100% / 7);
+  padding: 5px 5px;
+}
+
+.tag-box {
+  background-color: gray;
+  color: white;
+  padding: 10px 15px;
+  font-size: 0.5rem;
+  max-width: 60px;
+}
+
+.tag-active {
+  background-color: black;
+}
+
+@media (min-width: 765px) {
+  #food-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .food-list {
+    width: calc(100% / 2);
+    padding: 2rem 0.8rem;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  header .fa, header #mail {
+    display: none;
+  }
+
+  header #nav {
+    display: block;
+  }
+
+  header #logo {
+    margin: 0 auto;
+  }
+
+  header #test {
+    display: block;
+    flex-grow: 0.5;
+  }
+
+  #food-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .food-list {
+    width: calc(100% / 4);
+    padding: 2rem 1rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-section {
+    width: calc(100%/3);
+  }
+
+  .tag-list {
+    width: calc(100% / 5);
+    padding: 5px 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #app {
+    max-width: 1200px;
+  }
+
+  #about-chef p {
+    max-width: 90%;
+  }
+}
